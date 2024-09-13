@@ -1,5 +1,9 @@
 #!/usr/bin/python3
-""" FizzBuzz
+"""
+Python is from Script Language (Interpreter)
+that mean is read line by line here we fix code
+when devide by 3 and 5 return FuzzBuzz first
+and then continue other lines elif and else
 """
 import sys
 
@@ -17,11 +21,11 @@ def fizzbuzz(n):
 
     tmp_result = []
     for i in range(1, n + 1):
-        if i % 3 == 0 and i % 5 == 0:
+        if (i % 3) == 0 and (i % 5) == 0:
             tmp_result.append("FizzBuzz")
-        elif i % 3 == 0:
+        elif (i % 3) == 0:
             tmp_result.append("Fizz")
-        elif i % 5 == 0:
+        elif (i % 5) == 0:
             tmp_result.append("Buzz")
         else:
             tmp_result.append(str(i))
